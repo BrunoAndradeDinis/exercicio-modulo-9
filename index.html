@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tarefas</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/todo-icon-512x512-9kl6pozw.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Lista de tarefas</h1>
+  </header>
+  <main>
+    <section>
+      <form>
+        <input type="text" name="tarefa" id="tarefa">
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <div class="infos">
+        <p>Total tarefas: <strong id="tarefas-total">---</strong></p>
+        <p>A fazer: <strong id="tarefas-a-fazer">---</strong></p>
+        <p>Feitas: <strong id="tarefas-feitas">---</strong></p>
+      </div>
+
+    </section>
+    <section>
+      <ul id="lista-tarefas">
+        <!-- Tarefas serão inseridas aqui pelas LIs -->
+      </ul>
+    </section>
+
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
