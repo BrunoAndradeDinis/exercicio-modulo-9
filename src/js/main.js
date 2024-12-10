@@ -26,7 +26,7 @@ $(document).ready(function () {
     novaLinha.append(celulaDeInteracao);
     inputTarefa.val("");
     inputTarefa.focus();
-    novaLinha.fadeIn("300");
+    novaLinha.slideDown("300");
     atualizarDados();
   });
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
       ? li.find("button").attr("id", "excluir").text("Excluir").fadeIn()
       : li.find("button").attr("id", "editar").text("Editar").fadeIn();
 
-    li.find("button").fadeIn();
+    li.find("button").show();
     li.fadeIn("300");
     atualizarDados();
   });
